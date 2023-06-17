@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment2">
+
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="com.example.weatherapp.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment2_to_daysFragment"
+            app:destination="@id/daysFragment" />
+        <action
+            android:id="@+id/action_mainFragment2_to_hoursFragment"
+            app:destination="@id/hoursFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/daysFragment"
+        android:name="com.example.weatherapp.DaysFragment"
+        android:label="fragment_days"
+        tools:layout="@layout/fragment_days" >
+        <action
+            android:id="@+id/action_daysFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/hoursFragment"
+        android:name="com.example.weatherapp.HoursFragment"
+        android:label="fragment_hours"
+        tools:layout="@layout/fragment_hours" >
+        <action
+            android:id="@+id/action_hoursFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+    </fragment>
+</navigation>
