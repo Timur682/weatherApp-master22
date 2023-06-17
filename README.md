@@ -14,9 +14,6 @@ WeatherApp is a simple Android application that displays weather information usi
 - Implements OOP (Object-Oriented Programming) principles for code organization and maintainability.
 - Incorporates design patterns such as Observer (LiveData) and Adapter (RecyclerView Adapter).
 
-## Screenshots
-
-Include some screenshots or GIFs demonstrating the app's features and user interface.
 
 ## Libraries Used
 
